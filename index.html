@@ -25,20 +25,14 @@
 			      <li class="nav-item py-0 active"><a class='nav-link' href="#">HOME <span class="sr-only">(current)</span></a></li>
 			      <li class="nav-item py-0"><a class='nav-link' href="#">WHO WE ARE</a></li>
 			      <li class="nav-item py-0"><a class='nav-link' href="#">WHAT WE DO</a></li>
-			      <li class="nav-item py-0 dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICE </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			          <a class="dropdown-item" href="#">PART PRODUCTION</a>
-			          <a class="dropdown-item" href="#">DESIUGN/a>
-			          <a class="dropdown-item" href="#">INSTRUCTOR</a>
-			          <a class="dropdown-item" href="#">MAINTAIN</a>
-			        </div>
-			      </li>
+			      <li class="nav-item py-0"><a class='nav-link' href="#">SERVICE</a></li>
 			      <li class="nav-item py-0"><a class='nav-link' href="#">CONTACT</a></li>
 			    </ul>
 			  </div>
   		</div>
 	</nav>
 	<section class="bg-home">
+		<div class="bg-home-overlay"></div>
 		<div class="container" style="position: relative;top: 50%;transform: translateY(-50%);">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12" style="background-color:#FFB900 ; padding:5rem">
@@ -248,7 +242,6 @@
 				    <div class="card-body">
 				      <h5 class="card-title">Mainternance</h5>
 				      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-				       <button type="button" class="btn-detail" style="margin-left:auto"><span>Detail</span></button>
 				    </div>
 			  	</div>
 			  </div>
@@ -271,7 +264,6 @@
 				    <div class="card-body">
 				      <h5 class="card-title">Design</h5>
 				      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-				       <button type="button" class="btn-detail" style="margin-left:auto"><span>Detail</span></button>
 				    </div>
 			  	</div>
 			  </div>
@@ -294,7 +286,6 @@
 				    <div class="card-body">
 				      <h5 class="card-title">Part Production</h5>
 				      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-				       <button type="button" class="btn-detail" style="margin-left:auto"><span>Detail</span></button>
 				    </div>
 			  	</div>
 			  </div>
@@ -312,7 +303,6 @@
 				    <div class="card-body">
 				      <h5 class="card-title">Instructor</h5>
 				      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-				       <button type="button" class="btn-detail" style="margin-left:auto"><span>Detail</span></button>
 				    </div>
 			  	</div>
 			  </div>
@@ -321,97 +311,60 @@
 </div>
 </section>
 <section class="our-client">
-		<h3 style="text-align:center;color:white">Our Client</h3>
-	    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">    	
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <a href="https://bootstrapcreative.com/">
-                    <!-- 
-                    If you need more browser support use https://scottjehl.github.io/picturefill/
-                    If a picture looks blurry on a retina device you can add a high resolution like this
-                    <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
-
-                    What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
-                     -->
-                     <picture>
-                      <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
-                      <source srcset="https://dummyimage.com/1400x500/#007aeb/4196e5" media="(min-width: 769px)">
-                       <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
-                      <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-                    </picture>
-
-                    <div class="carousel-caption">
-                        <div>
-                            <h2>Digital Craftsmanship</h2>
-                            <p>We meticously build each site to get results</p>
-                            <span class="btn btn-sm btn-outline-secondary">Learn More</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- /.carousel-item -->
-            <div class="carousel-item">
-                <a href="https://bootstrapcreative.com/">
-                     <picture>
-                      <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
-                      <source srcset="https://dummyimage.com/1400x500/007aeb/4196e5" media="(min-width: 769px)">
-                       <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
-                      <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-                    </picture>
-
-                    <div class="carousel-caption justify-content-center align-items-center">
-                        <div>
-                            <h2>Every project begins with a sketch</h2>
-                            <p>We work as an extension of your business to explore solutions</p>
-                            <span class="btn btn-sm btn-outline-secondary">Our Process</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- /.carousel-item -->
-            <div class="carousel-item">
-                <a href="https://bootstrapcreative.com/">
-                     <picture>
-                      <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
-                      <source srcset="https://dummyimage.com/1400x500/007aeb/4196e5" media="(min-width: 769px)">
-                       <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
-                      <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-                    </picture>
-
-                    <div class="carousel-caption justify-content-center align-items-center">
-                        <div>
-                            <h2>Performance Optimization</h2>
-                            <p>We monitor and optimize your site's long-term performance</p>
-                            <span class="btn btn-sm btn-secondary">Learn How</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- /.carousel-item -->
-        </div>
-        <!-- /.carousel-inner -->
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- /.carousel -->
+	<div class="slider">
+		<h3 style="text-align: center;padding: 2rem">Our Client</h3>
+		<div class="slide-track">
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			</div>
+		</div>
+	</div>
 </section>
 <section class="contact">
-	<div class="container">
-		<h3>Contact Us</h3>
-		<h5>If you have any question,send to us with bellow form</h5>
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12">
+	<!-- <div class="container" style="padding:0;margin:0"> -->
+		<div class="row" style="padding:0;margin:0">
+			<div class="col-lg-6 col-md-6 col-sm-12" style="padding: 10rem;">
+				<h3 style="text-align: center">Contact Us</h3>
+				<!-- <h5 style="text-align:center">If you have any question,send to us with bellow form</h5> -->
 				<form>
 				  <div class="form-group">
 				    <label for="exampleInputPassword1">Full Name</label>
@@ -435,48 +388,18 @@
 				  </div>
 				</form>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h4>Contact Information</h4>
-				<h5><span class="icon-wrapper"><i class="fa fa-map-marked-alt"></i></span> 43 Paholyothin 48 Yak 60 Paholyothin Rd Taraeng Bankhen Bankok 10220</h5>
-				<h5><span class="icon-wrapper"><i class="fa fa-envelope"></i></span> tpmlp@gmail.com</h5>
-				<h5><span class="icon-wrapper"><i class="fa fa-mobile-alt"></i></span> 089-407-7868</h5>
-				<hr>
-				<h4>Business Hour</h4>
-				<h5><span class="icon-wrapper"><i class="fa fa-calendar-alt"></i></span> Monday - Saturday</h5>
-				<h5><span class="icon-wrapper"><i class="far fa-clock"></i></span> 8.00 - 17.00</h5>
+			<div class="map col-lg-6 col-md-6 col-sm-12">
+				<iframe id="map" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=%E0%B8%AB%E0%B8%88%E0%B8%81.%20%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B8%9B%20%E0%B9%81%E0%B8%A1%E0%B8%8A%E0%B8%8A%E0%B8%B5%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%20Phahon%20Yothin%2048%20Alley%2C%20Lane%2060%2C%20Tha%20Raeng%2C%20Bang%20Khen%2C%20Bangkok&key=AIzaSyDYqJm7ACn4fI0ztTniyTsJtE-QPcag3ls" allowfullscreen></iframe>
 			</div>
 			
 		</div>
-	</div>
+	<!-- </div> -->
 </section>
-<section class="map">
+<!-- <section class="map">
 		<iframe id="map" frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/place?q=%E0%B8%AB%E0%B8%88%E0%B8%81.%20%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B8%9B%20%E0%B9%81%E0%B8%A1%E0%B8%8A%E0%B8%8A%E0%B8%B5%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%20Phahon%20Yothin%2048%20Alley%2C%20Lane%2060%2C%20Tha%20Raeng%2C%20Bang%20Khen%2C%20Bangkok&key=AIzaSyDYqJm7ACn4fI0ztTniyTsJtE-QPcag3ls" allowfullscreen></iframe>
-</section>
-
-
-<!-- Form Contact -->
-<!-- <div class="container">
-	<form>
-	  <div class="form-group">
-	    <label for="exampleInputEmail1">Email address</label>
-	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleInputPassword1">Password</label>
-	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-	  </div>
-	  <div class="form-check">
-	    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-	    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-	  </div>
-	  <button type="submit" class="btn btn-primary">Submit</button>
-	</form> -->
-	
-	
-</div>
-
+</section> -->
 
 </body>
 
@@ -511,3 +434,4 @@
 	//   }
 	// }
 </script>
+
