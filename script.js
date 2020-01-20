@@ -6,7 +6,7 @@
 		$('html, body').animate({
 			scrollTop: target.offset().top-80,
 			scrollBottom: target.offset().bottom
-		}, 1500);
+		}, 800);
 	} });
 	
 	//Button porfolio

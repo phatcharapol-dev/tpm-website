@@ -139,13 +139,13 @@ section.what-we-are{
 	position:relative;
 	background-color: #313131;
 	z-index: 1;
-	padding:0;
-	margin:0;
+/*	padding:0;
+	margin:0;*/
 }
-.what-we-are .row{
+/*.what-we-are .row{
 	margin:0;
 	padding:0;
-}
+}*/
 .what-we-are h2{
 	color:#FFFFFF;
 }
@@ -153,8 +153,11 @@ section.what-we-are{
 	margin-top:3rem;
 	color:#D2D2D2;
 }
+.what-we-are .img-message{
+	padding:1rem 4rem;
+}
 .what-we-are .message{
-	padding:5rem 5rem 5rem 20rem;
+	padding:1rem 4rem;
 }
 section.what-we-do{
 	color:black;
@@ -191,6 +194,11 @@ h5.card-title{
 	text-align:left;
 	color:#FFB900;
 }
+h5.card-title img{
+	width:3rem;
+	height: 3rem;
+	margin-left:1rem;
+}
 p.card-text{
 	color:#D2D2D2;	
 }
@@ -225,15 +233,23 @@ section.product-support{
 	padding:0;
 	margin:0;
 }
-.product-support .product-left{
+.product-support .product-a,.product-d{
 	padding:8rem;
 	background-color:#FFC733;
 	color:#292828;
 }
-.product-support .product-right{
+.product-support .product-b,.product-c{
 	padding:8rem;
 	background-color:#292828;
-	color:white;
+	color:#D2D2D2;
+}
+.product-support .product-group-msg{
+	padding:3rem 0;
+}
+.product-support img{
+	width:3rem;
+	height: 3rem;
+	margin-right:1rem;
 }
 section.portfolio{
 	text-align: center;
@@ -256,7 +272,12 @@ section.portfolio{
 section.our-client{
 	margin: 0;
 	padding: 0;
-	background-color:#FFFFFF;
+	background-color:#262626;
+}
+.our-client h3{
+	color:#FFFFFF;
+	text-align: center;
+	padding-bottom: 5rem;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -290,9 +311,9 @@ section.our-client{
   padding:5rem;
 }
 .slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, #262626 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 25rem;
+  height: 30rem;
   position: absolute;
   width: 20rem;
   z-index: 2;
@@ -308,8 +329,8 @@ section.our-client{
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 30s linear 2s infinite;
+          animation: scroll 30s linear 2s infinite;
   display: flex;
   width: 100%;
   padding:0;
@@ -318,6 +339,7 @@ section.our-client{
   height: 25rem;
   width: 25rem;
   padding:0;
+
 }
 section.contact{
 	/*height: 100%;*/
@@ -335,6 +357,7 @@ section.contact{
 }
 
 .contact .message{
+	padding:5rem;
 	color:#000000;
 }
 .map{
@@ -448,11 +471,11 @@ footer {
 }
 
 /*Special Case*/
-@media only screen and (max-width:1400px) { 
+/*@media only screen and (max-width:1400px) { 
 	.what-we-are .message{
 		padding:5rem;
 	}
-}
+}*/
 /*Ipad*/
 @media only screen and (max-width:1024px) { 
 		html,body{
@@ -476,14 +499,15 @@ footer {
 		.what-we-are .message{
 			padding:5rem;
 		}
-		.product-support .product-left{
+		.product-support .product-a,.product-c{
 			padding:5rem;
 			background-color:#292828;
-			color:#EBEBEB;
+			color:#D2D2D2;		
 		}
-		.product-support .product-right{
+		.product-support .product-b,.product-d{
 			padding:5rem;
-			
+			background-color:#FFC733;
+			color:#292828;		
 		}
 		#map {
 			width:100%;
