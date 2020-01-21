@@ -21,10 +21,10 @@ h4 {
 }
 h5 {
 	padding:1rem 0;
-	font-size:2rem;
+	font-size:2.4rem;
 }
 p {
-	font-size:1.5rem;
+	font-size:2rem;
 	line-height: 3rem;
 }
 i {
@@ -110,7 +110,7 @@ div {
 
 section.bg-home{
    /* The image used */
-  background-image: url("home.jpg");
+  background-image: url("welder.jpeg");
   /* Full height */
   height: 100%;
 
@@ -154,7 +154,11 @@ section.what-we-are{
 	color:#D2D2D2;
 }
 .what-we-are .img-message{
-	padding:1rem 4rem;
+	padding:0 4rem;
+}
+.what-we-are .img-message img{
+	width:100%;
+	height: 30rem;
 }
 .what-we-are .message{
 	padding:1rem 4rem;
@@ -258,10 +262,13 @@ section.portfolio{
 .portfolio h2,h5{
 	color:#000000;
 }
+.portfolio .row{
+	padding:0;
+	margin:0;
+}
 .portfolio .img-item{
-	padding:1rem;
 	width:100%;
-	height: 25rem;
+	height: 100%;
 }
 .portfolio .filter-button-group{
 	padding:4rem;
@@ -270,76 +277,18 @@ section.portfolio{
 	margin:1rem;
 }
 section.our-client{
-	margin: 0;
-	padding: 0;
 	background-color:#262626;
 }
 .our-client h3{
 	color:#FFFFFF;
 	text-align: center;
-	padding-bottom: 5rem;
 }
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
+.our-client .img-group{
+	padding:3rem;
 }
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
-}
-.slider {
-  background: transparent;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 250px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding:5rem;
-}
-.slider::before, .slider::after {
-  background: linear-gradient(to right, #262626 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 30rem;
-  position: absolute;
-  width: 20rem;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 30s linear 2s infinite;
-          animation: scroll 30s linear 2s infinite;
-  display: flex;
-  width: 100%;
-  padding:0;
-}
-.slider .slide {
-  height: 25rem;
-  width: 25rem;
-  padding:0;
-
+.our-client .img-group img{
+	height: 10rem;
+	width:100%;
 }
 section.contact{
 	/*height: 100%;*/
@@ -470,13 +419,6 @@ footer {
 	background-color: black;
 }
 
-/*Special Case*/
-/*@media only screen and (max-width:1400px) { 
-	.what-we-are .message{
-		padding:5rem;
-	}
-}*/
-/*Ipad*/
 @media only screen and (max-width:1024px) { 
 		html,body{
 		font-size:8px;
