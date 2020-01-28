@@ -10,10 +10,10 @@ if( target.length ) {
 } });
 
 //Button porfolio
-var btnfull = document.getElementsByClassName('btn-full') ;
+var btnfull = document.getElementsByClassName('btn-outline') ;
 for (var i = 0; i < btnfull.length; i++) {
 btnfull[i].addEventListener("click", function() {
-	var current = document.getElementsByClassName("btn-full active");
+	var current = document.getElementsByClassName("btn-outline active");
 	current[0].className = current[0].className.replace(" active", "");
 	this.className += " active";
 });
