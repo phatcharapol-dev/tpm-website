@@ -530,7 +530,10 @@ button span {
 }
 
 footer {
+	text-align:center;
+	color:white;
 	background-color: #171b6f;
+	margin-top:auto; 
 }
 
 /*IPad*/
@@ -543,7 +546,7 @@ footer {
 	}
 
 	section {
-		padding: 8rem 2rem;
+		padding: 12rem 2rem;
 	}
 }
 
@@ -556,7 +559,7 @@ footer {
 	}
 
 	section {
-		padding: 8rem 2rem;
+		padding: 12rem 2rem;
 	}
 
 	.what-we-are .message {
@@ -600,7 +603,7 @@ footer {
 	}
 
 	section {
-		padding: 8rem 3rem;
+		padding: 12rem 3rem;
 	}
 
 	.what-we-are .message {
