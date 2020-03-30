@@ -28,17 +28,18 @@ var filterValue = $(this).attr('data-filter');
 $grid.isotope({ filter: filterValue });
 });
 // filter ProductD
-$grid.isotope({ filter: '.productD' });
+$grid.isotope({ filter: '.maintenance-overhaul-gearbox' });
 // filter ProductC
-$grid.isotope({ filter: '.productC' });
+$grid.isotope({ filter: '.welding-installation' });
 
 // filter ProductB
-$grid.isotope({ filter: '.productB' });
+$grid.isotope({ filter: '.sparepart-modifly' });
 
 // filter .ProductA
-$grid.isotope({ filter: '.productA' });
+$grid.isotope({ filter: '.machine-design' });
 
 // Carousel auto off
 $('.carousel').carousel('pause');
 
 
+  

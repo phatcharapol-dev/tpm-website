@@ -11,14 +11,19 @@ html {
 h1 {
 	font-size: 3.6rem;
 	color: white;
+	font-weight: 600;
 }
 
 h2 {
 	font-size: 3rem;
+	padding:1rem 0;
+	font-weight: 600;
 }
 
 h3 {
-	font-size: 2.8rem;
+	font-size: 2.5rem;
+	padding:1rem 0;
+	font-weight: 600;
 }
 
 h4 {
@@ -31,17 +36,17 @@ h5 {
 }
 
 p {
-	font-size: 1.6rem;
+	font-size: 2rem;
 	line-height: 3rem;
 }
 
 i {
-	color: #FFFFFF;
+	color: #000000;
 	padding-right: 1rem;
 }
 
 .i-social-group {
-	padding: 2rem 2rem 2rem 0;
+	padding: 0rem 0rem;
 }
 
 .i-social-group p {
@@ -54,7 +59,7 @@ i {
 
 hr {
 	border: 1px solid;
-	width: 100%;
+	width: 50%;
 }
 
 hr.black {
@@ -64,9 +69,12 @@ hr.black {
 hr.orange {
 	border-color: #FFB900
 }
+div.hr{
+	padding:10rem 0;
+}
 
 section {
-	padding: 5rem 5rem;
+	padding: 15rem 10rem;
 }
 
 div {
@@ -74,7 +82,7 @@ div {
 }
 
 #nav {
-	background-color: #000000;
+	background-color: #171b6f;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -116,8 +124,15 @@ div {
 
 }
 
+#nav a.active p {
+	color: #FFB900;
+	border-bottom: 2px solid #FFB900;
+	line-height: 2rem;
+	transition: all 0.4s ease 0s;
+}
+
 .navbar-collapse {
-	background-color: #000000;
+	background-color: #171b6f;
 }
 
 .navbar-toggler {
@@ -151,38 +166,18 @@ section.bg-home {
 	color: whitesmoke
 }
 
-section.what-we-are {
-	position: relative;
-	background-color: #FFFFFF;
-	z-index: 1;
+section.our-machine{
+	text-align:left;
+}
+.our-machine h2,.our-machine h3 {
+	text-align:center;
+}
+.our-machine h4 {
+	font-weight: 600;
 }
 
-.what-we-are .row {
-	margin: 0;
-	padding: 0;
-}
-
-.what-we-are h2 {
-	color: #000000;
-}
-
-.what-we-are p {
-	margin-top: 3rem;
-	color: #333333;
-}
-
-.what-we-are .img-message {
-	margin: 0;
-	padding: 0;
-}
-
-.what-we-are .img-message img {
-	width: 100%;
-	height: 100%;
-}
-
-.what-we-are .message {
-	padding: 5rem;
+section.about-us {
+	text-align:center;
 }
 
 section.what-we-do {
@@ -229,78 +224,87 @@ p.card-text {
 }
 
 section.why-us {
-	padding: 2rem 5rem;
-	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8),
+	/* background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8),
 			rgba(0, 0, 0, 0.8)), url('whyus.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #FFB900;
+	background-color: #FFB900; */
 	text-align: center;
 }
 
 .why-us h2 {
-	color: #FFFFFF;
+	color: #000000;
+}
+
+.why-us h5 {
+	font-weight: 600;
 }
 
 .why-us p {
-	color: #D2D2D2;
+	color: #000000;
 }
 
 .svg-why-us img {
-	width: 12rem;
-	height: 12rem;
+	width: 24rem;
+	height: 24rem;
 	padding: 2rem;
 }
 
-section.product-support {
+section.service {
 	background-color: #FFFFFF;
 	color: #000000;
 	text-align: center;
 }
-
-.product-support .row {
+.service h2 h3 h4 h5{
+	color:#000000;
+}
+.service .row {
 	padding: 0;
 	margin: 0;
 }
 
-.product-support .row.left {
+.service .row.left {
 	padding: 2rem 0;
-	text-align: right;
+	text-align: center;
 }
 
-.product-support .row.right {
+.service .row.right {
 	padding: 2rem 0;
-	text-align: left;
+	text-align: center;
 }
 
-.product-support .product-support-msg {
+.service .service-msg {
 	padding: 5rem;
 }
 
-.product-support .product-support-img {
+.service .service-group-msg ul{
+	text-align:left;
+}
+
+.service .service-img {
 	padding: 0;
 }
 
-.product-support .product-support-img img {
+.service .service-img img {
 	width: 100%;
-	height: 100%;
+	height: 40rem;
 }
 
 section.portfolio {
 	text-align: center;
-	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8),
+	/* background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8),
 			rgba(0, 0, 0, 0.8)), url('portfolio.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #FFB900;
+	background-color: #FFB900; */
 }
 
 .portfolio h2,
-h3,
-h5 {
-	color: #FFFFFF;
+.portfolio h3,
+.portfolio h5 {
+	color: #000000;
 }
 
 .portfolio .element-item {
@@ -311,7 +315,9 @@ h5 {
 	padding: 0;
 	margin: 0;
 }
-
+.portfolio .grid h3	{
+	padding:5rem 0;
+}
 .portfolio .img-item {
 	width: 100%;
 	height: 22rem;
@@ -344,13 +350,11 @@ section.policy {
 }
 
 section.our-client {
+	text-align: center;
+	color: #000000;
 	background-color: #FFFFFF;
 }
 
-.our-client h3 {
-	color: #000000;
-	text-align: center;
-}
 
 .our-client .img-group {
 	padding: 3rem;
@@ -362,34 +366,30 @@ section.our-client {
 }
 
 section.contact {
-	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.7),
+	/* background: linear-gradient(-90deg, rgba(0, 0, 0, 0.7),
 			rgba(0, 0, 0, 0.7)), url('contact.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #FFB900;
 
-	position: relative;
+	position: relative; */
 	/*	background: #FFB900;*/
-	color: #FFFFFF;
+	color: #000000;
+	text-align: center;
 	/*z-index: 1;*/
 }
-
-.contact h2 {
-	text-align: left;
+.contact .map-img img{
+	width:100%;
 }
-
-.contact h3 {
-	color: #FFFFFF;
-}
-
 .contact .map {
 	padding: 3rem 0;
 }
 
 .contact .message {
+	text-align:left;
 	padding: 3rem 5rem;
-	color: #FFFFFF;
+	color: #000000;
 }
 
 .contact .row {
@@ -444,7 +444,7 @@ button span {
 }
 
 .btn-outline {
-	color: #FFFFFF !important;
+	color: #000000 !important;
 	text-transform: uppercase;
 	text-decoration: none;
 	background: transparent;
@@ -475,9 +475,9 @@ button span {
 
 .btn-detail {
 	border-radius: 4px;
-	background: black;
+	background: #FFB900;
 	border: none;
-	color: #FFFFFF;
+	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.4rem;
@@ -530,7 +530,7 @@ button span {
 }
 
 footer {
-	background-color: black;
+	background-color: #171b6f;
 }
 
 /*IPad*/
@@ -567,12 +567,13 @@ footer {
 		width: 100%;
 		height: 50rem;
 	}
-	.product-support .product-support-msg {
+	.service .service-msg {
 		padding: 1rem;
+		text-align:left;
 	}
-	.product-support .row.left {
+	/* .service .row.left {
 		text-align: left;
-	}
+	} */
 	.contact h2{
 		text-align:center;
 	}
@@ -611,13 +612,14 @@ footer {
 		height: 50rem;
 	}
 
-	.product-support .product-support-msg {
+	.service .service-msg {
 		padding: 1rem;
+		text-align:left;
 	}
 
-	.product-support .row.left {
+	/* .service .row.left {
 		text-align: left;
-	}
+	} */
 
 	.contact h2{
 		text-align:center;
@@ -634,3 +636,5 @@ footer {
 		display: flex;
 	}
 }
+
+  
