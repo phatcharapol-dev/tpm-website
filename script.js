@@ -1,4 +1,4 @@
-	// Landing Page
+// Landing Page
 $('a[href^="#"]').on('click', function(event) {
 var target = $( $(this).attr('href') );
 if( target.length ) {
@@ -70,12 +70,14 @@ $grid.isotope({ filter: '.machine-design' });
 	function loadImage (el, fn) {
 	  var img = new Image()
 		, src = el.getAttribute('data-src');
+		img.src = 'welder.jpeg';
 	  img.onload = function() {
-		if (!! el.parent)
+		if (!!el.parent){
+			console.log(el);
 		  el.parent.replaceChild(img, el)
-		else
+		}else{
 		  el.src = src;
-  
+		}
 		fn? fn() : null;
 	  }
 	  img.src = src;
@@ -112,6 +114,7 @@ $grid.isotope({ filter: '.machine-design' });
 	  addEventListener('scroll',processScroll);
   
   }(this);
+
 
 
 
