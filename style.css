@@ -56,6 +56,9 @@ i {
 .i-social-item {
 	cursor: pointer;
 }
+.fa-bars:before {
+	color:#FFFFFF;
+}
 
 hr {
 	border: 1px solid;
@@ -92,7 +95,7 @@ div {
 }
 
 #logo-nav {
-	width: 10rem;
+	width: 15rem;
 }
 
 #nav span {
