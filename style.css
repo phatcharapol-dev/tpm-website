@@ -44,6 +44,14 @@ i {
 	color: #000000;
 	padding-right: 1rem;
 }
+button{
+    outline:none !important;
+}
+
+button:focus{
+    outline:none !important;
+}
+
 
 .i-social-group {
 	padding: 0rem 0rem;
